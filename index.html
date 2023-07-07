@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nft card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <style>
+    /* BODY BACKGROUND */
+    body {
+      background: hsl(217, 54%, 11%);
+      height: 900px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    /* CARD BACKGROUND/DISPLAY */
+    .content {
+      background: hsl(216, 50%, 16%);
+      height: 600px;
+      width: 350px;
+      border-radius: 5%;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Outfit', sans-serif;
+      color: white;
+      font-size: 23px;
+      box-shadow: 20px 20px hsl(215, 73%, 9%);
+    }
+
+
+    /* IMAGE */
+    .img {
+      background: url("images/image-equilibrium.jpg") no-repeat center center/cover;
+      height: 50%;
+      margin: 7%;
+      border-radius: 3%;
+    }
+
+    /* EQUILIBRIUM  */
+    #header {
+      margin-left: 7%;
+      position: relative;
+      bottom: 15%;
+    }
+
+    /* PARAGRAGH */
+    #para {
+      font-weight: lighter;
+      font-size: 18px;
+      margin-left: 7%;
+      color: hsl(215, 51%, 70%);
+      position: relative;
+      bottom: 15%;
+    }
+
+    /* ETH ICON AND CLOCK SECTION */
+    .days {
+      display: flex;
+      flex-direction: row;
+      margin-left: 7%;
+      margin-right: 7%;
+      font-size: 18px;
+      align-items: center;
+      position: relative;
+      bottom: 3%;
+      justify-content: space-between;
+    }
+
+    /* ETH ICON */
+    #eth {
+      color: aqua;
+      position: relative;
+      bottom: 3px;
+      left: 8%;
+    }
+
+    /* CLOCK ICON */
+    #clock {
+      color: hsl(215, 51%, 70%);
+      position: relative;
+      bottom: 3px;
+      left: 8%;
+    }
+
+
+    /* LINE */
+    hr {
+      width: 86%;
+      color: hsl(215, 51%, 70%);
+    }
+
+    /* AVATAR/ NAME SECTION */
+    .name {
+      height: 14%;
+      text-align: center;
+    }
+
+    /* AVATAT */
+    #img {
+      border-radius: 50%;
+      height: 50%;
+      margin-left: 7%;
+      position: relative;
+      top: 5%;
+      right: 12%;
+    }
+
+    /* NAME */
+    #name {
+
+      font-size: 80%;
+      position: relative;
+      bottom: 15%;
+      right: 10%;
+    }
+
+    /* COLOR DISTINCTION IN NAME */
+    #create {
+      color: hsl(215, 51%, 70%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- IMAGE/HEADER -->
+  <div class="content">
+    <div class="img"></div>
+    <div class="txt">
+      <p id="header">Equilibrium #3429</p>
+      <p id="para">Our Equilibrum collection promotes balance and calm.</p>
+    </div>
+
+    <!-- ETH/ CLOCK ICON SECTION -->
+    <div class="days">
+      <div id="icon-eth">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+            fill="#00FFF8" />
+        </svg>
+        <f id="eth">0.041 ETH</f>
+      </div>
+      <div id="icon-clock">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+            fill="#8BACD9" />
+        </svg>
+        <f id="clock">3 days left</f>
+      </div>
+    </div>
+
+    <!-- LINE -->
+    <hr>
+    <!-- AVATAR/ NAME SECTION -->
+    <div class="name">
+      <img src="images/image-avatar.png" alt="" id="img">
+      <f id="name">
+        <f id="create">Creation of</f> Jules Wyvern
+      </f>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
